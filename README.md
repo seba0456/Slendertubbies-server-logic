@@ -27,7 +27,7 @@ This straightforward API may pose security risks due to its potential for uninte
 
 On the client-side, I utilized the [VA Rest API Plugin](https://www.unrealengine.com/marketplace/en-US/product/varest-plugin) to establish connections with my server.
 
-The `website` folder contains all files utilized by the Apache server, while `SlendertubbiesDB_Data` holds `config.ini` and `auth_key`. These directories should reside in the `www` server, containing sensitive credentials, so ensure their security. The `scripts` folder comprises a script for backing up the database, which can be automated using `cron`.
+The `website` folder contains all files utilized by the Apache server, while `SlendertubbiesDB_Data` holds `config.ini` and `auth_key`. These directories shouldn't reside in the `www` server, containing sensitive credentials, so ensure their security. The `scripts` folder comprises a script for backing up the database, which can be automated using `cron`.
 
 ## Miscellaneous
 
