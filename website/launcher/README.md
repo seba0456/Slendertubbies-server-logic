@@ -1,0 +1,1 @@
+My launcher, instead of making an API call, uses this `.txt` file to download the latest GameVersion. This was a smart way to bypass my previous website-only hosting. I've decided to keep it because changing it would require updating the launcher client.
