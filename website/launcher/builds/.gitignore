@@ -1,2 +1,3 @@
+# Ignore all files except for .md files
 *
-!.gitignore
+!*.md
