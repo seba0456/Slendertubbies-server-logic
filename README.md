@@ -1,3 +1,7 @@
+# Message
+
+I've decided to publish my Slendertubbies website and its logic here, on Github.
+
 This is server side logic for Slendertubbies (not multiplayer).
 
 ```
