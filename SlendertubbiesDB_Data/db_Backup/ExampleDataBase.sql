@@ -134,8 +134,8 @@ LOCK TABLES `playerdata` WRITE;
 /*!40000 ALTER TABLE `playerdata` DISABLE KEYS */;
 INSERT INTO playerdata (PlayerID, PublicID, PlayerName, GameVersion, RegistrationDate, CollectedCustards, CatchedSurvivors, StartedSP_Games, FinishedSP_Games, HostedMP_Games, JoinedMP_Games, FinishedMP_Games, LastActive, bUsedEpic, bPublicProfile, Score)
 VALUES 
-('123456', 'ABCDEF', 'Gracz1', '1.0', '2024-03-19 12:00:00', 10, 5, 3, 2, 1, 5, 2, '2024-03-19 13:00:00', 0, 1, 100),
-('789012', 'GHIJKL', 'Gracz2', '1.2', '2024-03-18 10:00:00', 8, 3, 2, 1, 0, 2, 1, '2024-03-18 11:30:00', 1, 1, 80);
+('123456', 'ABCDEF', 'Player1', '1.0', '2024-03-19 12:00:00', 10, 5, 3, 2, 1, 5, 2, '2024-03-19 13:00:00', 0, 1, 100),
+('789012', 'GHIJKL', 'Player2', '1.2', '2024-03-18 10:00:00', 8, 3, 2, 1, 0, 2, 1, '2024-03-18 11:30:00', 1, 1, 80);
 /*!40000 ALTER TABLE `playerdata` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -199,9 +199,9 @@ LOCK TABLES `startedgames` WRITE;
 /*!40000 ALTER TABLE `startedgames` DISABLE KEYS */;
 INSERT INTO startedgames (MatchID, RoomName, GameMode, MapName, CustardAmount, bSelectTubby, bBattery, bFullTubby, bMultiplayer, MaxPlayers, HostedBy, CreateTime) 
 VALUES 
-('ABC123', 'Room1', 'SinglePlayer', 'Forest', 5, 1, 1, 0, 0, 1, 'Player1', '2024-03-19 10:00:00'),
-('DEF456', 'Room2', 'Multiplayer', 'Mountains', 10, 1, 1, 1, 1, 4, 'Player2', '2024-03-19 11:30:00'),
-('GHI789', 'Room3', 'SinglePlayer', 'Desert', 8, 1, 0, 1, 0, 1, 'Player3', '2024-03-19 12:45:00');
+('ABC123', 'Room1', 'versus', 'Forest', 5, 1, 1, 0, 0, 1, 'Player1', '2024-03-19 10:00:00'),
+('DEF456', 'Room2', 'versus', 'Mountains', 10, 1, 1, 1, 1, 4, 'Player2', '2024-03-19 11:30:00'),
+('GHI789', 'Room3', 'collect, 'Desert', 8, 1, 0, 1, 0, 1, 'Player3', '2024-03-19 12:45:00');
 /*!40000 ALTER TABLE `startedgames` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
