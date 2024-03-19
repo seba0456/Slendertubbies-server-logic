@@ -5,4 +5,4 @@ http://192.168.1.3/voyager.php?authKey=key_here&action=modify&tableName=playerda
 Nadpis:
 http://192.168.1.3/voyager.php?authKey=key_here&action=overwriting&tableName=playerdata&variableName=PlayerName&newValue=NewNickname&playerID=3a5e07d857bc3130
 Wypisz zmienne wszystkie
-voyager.php?authKey=8UfpbsRvnGje2DvrGBNYAevUyq9w8dEA3ApDs9tvqMhz6eUqb7VEvESV7YbpFjSN&action=getDetailedPlayerData&playerID=3a5e07d857bc3130
+http://192.168.1.3/voyager.php?authKey=key_here&action=getDetailedPlayerData&playerID=3a5e07d857bc3130
