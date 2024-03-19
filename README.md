@@ -1,2 +1,1 @@
-# Slendertubbies server logic
- 
+This is server side logic for Slendertubbies (not multiplayer).

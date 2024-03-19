@@ -1,0 +1,30 @@
+# Disable directory browsing
+Options -Indexes
+
+# Enable the rewrite engine
+RewriteEngine on
+
+# If the protocol is not HTTPS
+RewriteCond %{HTTPS} off
+# Redirect to the same URL but with HTTPS
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# If the requested filename is not a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+# And if the .php version of the filename exists
+RewriteCond %{REQUEST_FILENAME}.php -f
+# Then internally rewrite the URL to use the .php file
+RewriteRule ^([^/]+)/?$ $1.php [L]
+
+# Redirect URLs of the form 'player/1rq' to 'player.php?publicID=1rq'
+RewriteRule ^player/([a-zA-Z0-9]+)$ player.php?publicID=$1 [QSA,L]
+
+# If the original request includes .html
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+# Then redirect to the URL without the .html
+RewriteRule ^ /%1 [NC,L,R]
+
+# If the .html version of the filename exists
+RewriteCond %{REQUEST_FILENAME}.html -f
+# Then internally rewrite the URL to use the .html file
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
