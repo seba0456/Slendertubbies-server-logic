@@ -8,7 +8,7 @@ I will also attempt to include a configuration file that directs the Slendertubb
 
 ## Functionality
 
-This code represents the server-side logic for Slendertubbies, excluding the multiplayer aspect.
+This code represents the server-side logic for Slendertubbies, excluding the multiplayer aspect. Here you can see how my entire website works, including player profiles, API, and the main page.
 
 ## How it Works
 
