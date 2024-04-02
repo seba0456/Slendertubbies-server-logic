@@ -8,18 +8,6 @@
     <title>Slendertubbies</title>
     <link rel="stylesheet" type="text/css" href="home_style.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLETTZ5RXJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-VLETTZ5RXJ');
-    </script>
 </head>
 
 <body>
@@ -38,12 +26,6 @@
                 </div>
                 <br>
             </div>
-            <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-            <script type='text/javascript'>
-                kofiwidget2.init('Support Me on Ko-fi', '#8B0000', 'O4O6U2OB7');
-                kofiwidget2.draw();
-            </script>
-
         </div>
         <div class="stats">
 
